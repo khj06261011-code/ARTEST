@@ -162,11 +162,11 @@
 
     // 조명
     scene.add(
-      new THREE.HemisphereLight(0xffffff, 0x444444, 1.5)
+      new THREE.HemisphereLight(0xffffff, 0x444444, 3)
     ); 
     // 환경라이트, 수치가 밝기
     const directionalLight = new THREE.DirectionalLight(
-      0xffffff, 2
+      0xffffff, 4
     );
     
     directionalLight.position.set(1, 2, 3);
@@ -178,7 +178,7 @@
     // 콘텐츠 urls
     const VIDEO_FILE = "./기상1.mp4";
     const IMAGE_FILE = "./2161700_4.jpg";
-    const MODEL_FILE = "./model.glb";
+    const MODEL_FILE = "./제강호 함선3.glb";
 
     // 영상과 이미지 사이 간격 (마커 가로 길이 1 기준)
     // 영상 아래에 재생바 0.15
